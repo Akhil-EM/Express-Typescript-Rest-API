@@ -11,7 +11,7 @@ Using `jwt` and `bcrypt` packages for encryption.
 * rename .env-demo to .env and change env variables
 * install node_modules using ` npm install`
 
-#### Avilable NPM Commands
+#### Available NPM Commands
 * `npm run dev` run in development node_modules.
 * `npm run start` run in production mode.
 * `npm run build` take build.
@@ -24,11 +24,11 @@ Using `jwt` and `bcrypt` packages for encryption.
 
 | Folder     | Description                       |
 | :--------  |  :----------------------------|
-| `src/bin`       | www file is from where the prject starts  |
+| `src/bin`       | www file is from where the project starts  |
 | `src/config`      |  all the configuration files  |
 | `src/controllers`      |  all the controller files (route handlers)  |
 | `src/db`      |  files related to database and schemas |
-| `src/middlewares`      |  avialable middlewares |
+| `src/middlewares`      |  available middlewares |
 | `src/services`      |  database queries and business logic |
 | `src/util`      |  helper functions |
 | `src/validators`      |   validation files |
