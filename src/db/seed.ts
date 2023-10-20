@@ -1,12 +1,20 @@
 import * as mongodb from "./mongodb";
 // import * as schema from "./schemas";
-(async () => {
+
+async function seeder() {
     //create connection 
     await mongodb.createConnection();
 
-    //data seeding 
 
-    console.log("mongodb seeding completed..!!!");
+    await mongodb.closeConnection();
+
+
+}
+
+seeder().then(() => {
+    console.log("mongo db seeding completed ..!!");
     process.exit(0);
-    
-})();
+}).catch((error) => {
+    console.log("error seeding database :", (error as Error).message);
+    process.exit(0);
+});
