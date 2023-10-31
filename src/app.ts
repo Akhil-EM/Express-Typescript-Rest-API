@@ -10,25 +10,22 @@ const app = express();
 //middlewares
 app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({
+app.use(
+  express.urlencoded({
     extended: true,
-}));
+  }),
+);
 app.use(cors());
 
 //connect to database
 mongoDB.createConnection();
 
-
-
 //controllers
 app.use("/", mainController);
 
-
-
-
 app.on("close", async () => {
-    //close db connections
-    await mongoDB.closeConnection();
+  //close db connections
+  await mongoDB.closeConnection();
 });
 
 export default app;
