@@ -3,7 +3,7 @@
 
 A REST api server based on express.js and Typescript. Support to mongodb added using mongoose package . Express validation middleware added for validation.
 Using `jwt` and `bcrypt` packages for encryption.
-
+Using `Jest` and `SuperTest` packages for testing
 
 ## How To Start
 
@@ -15,7 +15,8 @@ Using `jwt` and `bcrypt` packages for encryption.
 * `npm run dev` run in development node_modules.
 * `npm run start` run in production mode.
 * `npm run build` take build.
-* `npm run seed` seed mongodb database. 
+* `npm run test` run tests.
+* `npm run seed` seed database. 
 
 
 ## Folder Structure
