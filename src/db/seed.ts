@@ -1,6 +1,8 @@
 import * as mongodb from "./mongodb";
 // import * as schema from "./schemas";
-
+/**
+ * run database seeding operations.
+ */
 async function seeder() {
   //create connection
   await mongodb.createConnection();

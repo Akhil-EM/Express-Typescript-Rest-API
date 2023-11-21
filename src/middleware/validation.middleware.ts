@@ -2,7 +2,12 @@ import httpStatus from "http-status";
 import { responseHelper } from "../util/response.helper";
 import { Response, Request, NextFunction } from "express";
 import { validationResult } from "express-validator";
-
+/**
+ * middleware to validate request based on the schema.
+ * @param {Request} req 
+ * @param {Response} res 
+ * @param {NextFunction } next 
+ */
 function validationCheckMiddleWare(
   req: Request,
   res: Response,
