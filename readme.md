@@ -2,8 +2,12 @@
 # Express Typescript Rest API
 
 A REST api server based on express.js and Typescript. Support to mongodb added using mongoose package . Express validation middleware added for validation.
+
 Using `jwt` and `bcrypt` packages for encryption.
-Using `Jest` and `SuperTest` packages for testing
+
+Using `Jest` and `SuperTest` packages for testing.
+
+Using `swagger-ui-express` for API documentation.
 
 ## How To Start
 
@@ -33,30 +37,13 @@ Using `Jest` and `SuperTest` packages for testing
 | `src/services`      |  database queries and business logic |
 | `src/util`      |  helper functions |
 | `src/validators`      |   validation files |
+| `src/swagger`      |   swagger documentaion file |
 
-## API Reference
+## API Documentaion
 
-#### Base url
-
-```http
-  GET /
-```
-
-
-#### Create user
-
-```http
-  POST /users
-```
-
-| body | Type     | Description                       |
-| :-------- | :------- | :----------------------------|
-| `username`      | `string` | **Required**  |
-| `password`      | `string` | **Required**  |
-
+vist [/api-docs](/api-docs) for api documentation generated using swagger.
 
 
 ## Author
 
 - [@Akhil E M](https://github.com/Akhil-EM)
-
