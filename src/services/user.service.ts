@@ -13,7 +13,7 @@ async function createUser(req: Request, res: Response) {
 
     return responseHelper(
       res,
-      httpStatus.OK,
+      httpStatus.CREATED,
       false,
       "new user created successfully",
     );

@@ -3,8 +3,10 @@ dotenv.config();
 import logger from "morgan";
 import cors from "cors";
 import express from "express";
+import swaggerUi from "swagger-ui-express";
 import mainController from "./controllers";
 import * as mongoDB from "./db/mongodb";
+import * as  swaggerDocument  from "./swagger/swagger.json";
 const app = express();
 
 //middlewares
@@ -16,8 +18,10 @@ app.use(
   }),
 );
 app.use(cors());
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument)); //swagger docs
 
 //connect to database
+
 mongoDB.createConnection();
 
 //controllers

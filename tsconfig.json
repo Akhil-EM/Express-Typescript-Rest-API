@@ -4,12 +4,14 @@
     "module": "CommonJS",
     "outDir": "./dist",
     "rootDir": "./src",
-    "esModuleInterop": true, // Add this line
+    "esModuleInterop": true, 
+    "resolveJsonModule": true,
     // Other compiler options...
   },
   "exclude": [
     "jest.config.ts",
     "tests/**",
-    "node_modules"
+    "node_modules",
+    "swagger/swagger.json",
   ]
 }
